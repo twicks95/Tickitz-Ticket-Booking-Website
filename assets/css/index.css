@@ -1,0 +1,292 @@
+/* GLOBAL STYLING */
+body {
+  font-family: 'Mulish', sans-serif;
+}
+
+h4 {
+  font-weight: 700;
+}
+
+.btn-view-all {
+  font-weight: 700;
+}
+
+.btn-outline-primary {
+  border: 1px solid #5F2EEA !important;
+}
+
+.btn-outline-primary:hover {
+  color: #FFFFFF !important;
+}
+
+.btn-outline-primary:hover, .btn-join-now {
+  background-color: #5F2EEA !important;
+}
+
+/* MULTIPLE ELEMENT STYLING */
+.navbar, .footer {
+  margin-right: 130px;
+  margin-left: 130px;
+}
+
+.jumbotron, .now-showing, .upcoming-movies, .join-a-member {
+  margin-right: 130px;
+  margin-left: 130px;
+}
+
+.jumbotron .box1, .box2, .box3 {
+  /* border: 1px solid black; */
+  width: 107px;
+  height: 352px;
+  filter: drop-shadow(8px 16px 30px rgba(0, 0, 0, 0.3));
+  border-radius: 10px;
+}
+
+.join-a-member span, .jumbotron span, .months-list .btn, .card-body .btn, .btn-view-all {
+  color: #5F2EEA;
+}
+
+.join-a-member span, .jumbotron span {
+  font-weight: 700;
+  font-size: 56px;
+}
+
+.join-a-member, footer {
+  letter-spacing: 0.5px;
+}
+
+.jumbotron .left-section p, .card-text, .input-email {
+  color: #A0A3BD;
+}
+
+.card-text, .btn-join-now {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* NAV STYLING*/
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 104px;
+  background-color: #FFFFFF !important;
+}
+
+/* JUMBOTRON STYLING */
+.jumbotron {
+  margin-top: 80px;
+  margin-bottom: 205px;
+}
+
+.jumbotron .box1 {
+  background-image: url("../assets/img/spiderman.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.jumbotron .box2 {
+  margin-right:24px;
+  margin-left:24px;
+  margin-bottom: 72px;
+  background-image: url("../assets/img/lion-king.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.jumbotron .box3 {
+  margin-bottom: 144px;
+  background-image: url("../assets/img/ad225c70f9deb342f75d7fa7b019f397.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* NOW SHOWING STYLING */
+.now-showing h4 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.now-showing h4::after {
+  content: "";
+  width: 100px;
+  height: 3px;
+  border-radius: 50px;
+  background-color: #5F2EEA;
+  display: block;
+  position: absolute;
+  bottom: -16px;
+  margin: 0 auto;
+}
+
+/* UPCOMING MOVIES STYLING */
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+/* .month-based {
+  display: flex;
+  overflow: auto;
+} */
+
+.months-list {
+  margin-top: 40px;
+  margin-bottom: 56px;
+}
+
+.months-list::-webkit-scrollbar, .movies-list::-webkit-scrollbar {
+  display: none;
+}
+
+.months-list .btn {
+  height: 42px;
+  width: 127px;
+  margin-right: 16px;
+  border-radius: 8px;
+  flex: 0 0 auto;
+}
+
+.months-list .btn:active {
+  box-shadow: 0px 8px 30px rgba(95, 46, 234, 0.3);
+}
+
+.month-list .btn:focus {
+  background-color: #FFFFFF;
+}
+
+.movies-list .card {
+  width: 223px;
+  height: 452px;
+  padding: 32px;
+  margin-right: 24px;
+  border-radius: 24px;
+  flex: 0 0 auto;
+}
+
+.card .card-img-top {
+  border-radius: 16px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.15px;
+}
+
+.card-text {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+
+.card-body .btn {
+  width: 159px;
+  height: 33px;
+  font-size: 14px;
+  margin-top: 40px;
+  border-radius: 8px;
+}
+
+/* JOIN MEMBER STYLING */
+.join-a-member {
+  /* border: 1px solid black; */
+  height: 372px;
+  border-radius: 24px;
+  margin-top: 138px;
+  margin-bottom: 96px;
+  box-shadow: 0px 16px 32px rgba(186, 186, 186, 0.3);
+}
+
+.input-email {
+  width: 306px;
+  margin-right: 16px;
+}
+
+.btn-join-now {
+  width: 120px;
+  font-weight: 600;
+}
+
+.input-email, .btn-join-now {
+  height: 53px;
+  border-radius: 12px;
+}
+
+.input-email, .join-a-member {
+  letter-spacing: 0.75px;
+}
+
+.input-email, .join-a-member, .btn-join-now {
+  font-size: 14px;
+}
+
+.join-a-member span {
+  font-size: 48px;
+}
+
+.join-a-member form {
+  margin: 48px 0 40px 0;
+}
+
+.join-a-member p:first-child {
+  color: #4E4B66;
+  font-size: 24px;
+  font-weight: 400;
+  /* line-height: 54.72px; */
+  letter-spacing: 0.25px;
+  margin-bottom: 0;
+}
+
+.join-a-member p:last-child {
+  color: #6E7191;
+  text-align: center;
+}
+/* ==================== */
+
+/* FOOTER STYLING*/
+h5 {
+  margin-bottom: 30.54px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.sponsor-ebu {
+  height: 44.85px;
+}
+
+.sponsor-cine-one {
+  height: 26.52px;
+  margin: 25px 0;
+}
+
+.sponsor-hiflix {
+  height: 24.51px;
+}
+
+/* .sponsor-ebu h5, .sponsor-cine-one h5, .sponsor-hiflix h5 {
+  font-weight: 600 !important;
+} */
+
+.footer-left img {
+  margin-bottom: 29.87px;
+}
+
+.footer-left p, h5 {
+  font-size: 16px;
+}
+
+.footer-left p {
+  color: #6E7191;
+  letter-spacing: 0.75px;
+}
+
+.explore a {
+  margin-bottom: 14.7px;
+}
+
+.explore a, .container p {
+  color: #4E4B66;
+}

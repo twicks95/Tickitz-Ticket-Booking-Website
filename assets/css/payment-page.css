@@ -1,0 +1,77 @@
+body {
+  font-family: 'Mulish', sans-serif;
+}
+
+.payment-detail-form {
+  margin: 0 70px;
+}
+
+.payment-info, .payment-method {
+  border-radius: 24px;
+}
+
+.card-title {
+  font-weight: 700;
+  letter-spacing: 0.25px;
+}
+
+/* PAYMENT INFO CARD STYLING */
+.payment-info {
+  padding: 48px 40px;
+  letter-spacing: 0.25px;
+}
+
+.list-group-item {
+  color: #6B6B6B;
+}
+
+.list-group-item .detail {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.list-group-item .detail, .detail-price {
+  color: #000000;
+}
+
+.list-group-item .detail-price {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+
+
+.payment {
+  width: 146px;
+  height: 56px;
+  border-radius: 16px;
+}
+
+.payment-method {
+  padding: 56px 44px;
+}
+
+.payment-method .row {
+  grid-row-gap: 32px;
+  /* grid-column-gap: 0; */
+}
+
+.or-separator {
+  margin: 32px 0 24px
+}
+
+.or-separator::before {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #DEDEDE;
+  margin-right: 40px;
+}
+
+.or-separator::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #DEDEDE;
+  margin-left: 40px;
+}
