@@ -44,7 +44,8 @@
   color: #414141 !important;
 }
 
-.navbar .menu, .navbar .dropdown {
+.navbar .menu,
+.navbar .dropdown {
   font-weight: 600;
 }
 
@@ -78,19 +79,6 @@
 .search button {
   margin-right: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* FOOTER STYLING*/
 .footer h5 {

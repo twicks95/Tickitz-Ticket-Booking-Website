@@ -103,8 +103,11 @@ footer {
   color: #414141 !important;
 }
 
-.navbar .menu {
+.navbar .menu, .navbar .dropdown {
   font-weight: 600;
+}
+
+.navbar .menu {
   margin-right: 19px;
 }
 
@@ -129,9 +132,9 @@ footer {
 
 .search button {
   margin-right: 0;
-  /* margin-left: 10px; */
 }
 
+/* FOR SCREEN ABOVE 1366px */
 @media (min-width: 1366px) {
   .navbar-brand {
     margin-right: 72px;
@@ -141,7 +144,7 @@ footer {
     margin-right: 56px;
   }
 
-  .search .btn {
+  .navbar .search .btn {
     margin: 0 48px;
   }
 }
@@ -448,6 +451,10 @@ footer {
   .upcoming-list .card {
     width: 152px;
     padding: 16px;
+  }
+
+  .now-showing-list .card-title {
+    width: 122px;
   }
 
   .card-title {
