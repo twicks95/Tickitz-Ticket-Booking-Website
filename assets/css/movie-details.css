@@ -1,0 +1,23 @@
+.navbar {
+  font-family: 'Mulish', sans-serif;
+  height: 104px;
+  padding-right: 70px;
+  padding-left: 70px;
+}
+
+.navbar .container-fluid {
+  padding: 0;
+}
+
+.navbar-brand img {
+  width: 120.5px;
+  margin-right: 72px;
+}
+
+.nav-link {
+  margin-right: 56px;
+}
+
+.movie-poster {
+  padding: 47.65px;
+}

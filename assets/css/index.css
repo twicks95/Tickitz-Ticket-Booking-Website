@@ -1,6 +1,6 @@
 /* GLOBAL STYLING */
 body {
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
 }
 
 h4 {
@@ -12,91 +12,170 @@ h4 {
 }
 
 .btn-outline-primary {
-  border: 1px solid #5F2EEA !important;
+  color: #5f2eea !important;
+  border: 1px solid #5f2eea !important;
 }
 
+.btn-primary:hover {
+  background-color: #4d1fcc !important;
+}
+
+.btn-primary,
 .btn-outline-primary:hover {
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 
-.btn-outline-primary:hover, .btn-join-now {
-  background-color: #5F2EEA !important;
+.btn-primary,
+.btn-outline-primary:hover {
+  background-color: #5f2eea !important;
 }
 
 /* MULTIPLE ELEMENT STYLING */
-.navbar, .footer {
+.navbar,
+.footer {
   margin-right: 130px;
   margin-left: 130px;
 }
 
-.jumbotron, .now-showing, .upcoming-movies, .join-a-member {
+.hero-section,
+.now-showing,
+.upcoming-movies,
+.join-a-member {
   margin-right: 130px;
   margin-left: 130px;
 }
 
-.jumbotron .box1, .box2, .box3 {
-  /* border: 1px solid black; */
+.hero-section .box1,
+.box2,
+.box3 {
   width: 107px;
   height: 352px;
   filter: drop-shadow(8px 16px 30px rgba(0, 0, 0, 0.3));
   border-radius: 10px;
 }
 
-.join-a-member span, .jumbotron span, .months-list .btn, .card-body .btn, .btn-view-all {
-  color: #5F2EEA;
+.join-a-member span,
+.hero-section span,
+.months-list .btn,
+.card-body .btn,
+.btn-view-all {
+  color: #5f2eea;
 }
 
-.join-a-member span, .jumbotron span {
+.join-a-member span,
+.hero-section span {
   font-weight: 700;
   font-size: 56px;
 }
 
-.join-a-member, footer {
+.join-a-member,
+footer {
   letter-spacing: 0.5px;
 }
 
-.jumbotron .left-section p, .card-text, .input-email {
-  color: #A0A3BD;
+.hero-section .left-section p,
+.card-text,
+.input-email {
+  color: #a0a3bd;
 }
 
-.card-text, .btn-join-now {
-  font-family: 'Open Sans', sans-serif;
+.card-text,
+.btn-join-now {
+  font-family: "Open Sans", sans-serif;
 }
 
 /* NAV STYLING*/
 .navbar {
-  padding-top: 0;
-  padding-bottom: 0;
-  height: 104px;
-  background-color: #FFFFFF !important;
+  /* padding-top: 0;
+  padding-bottom: 0; */
+  padding: 19px 0;
+  /* height: 104px; */
+  background-color: #ffffff !important;
+  /* font-family: 'Mulish', sans-serif; */
 }
 
-/* JUMBOTRON STYLING */
-.jumbotron {
+.navbar .navbar-container {
+  padding: 0;
+}
+
+.navbar-brand {
+  width: 130px;
+  margin-right: 36px;
+}
+
+.navbar .nav-link {
+  color: #414141 !important;
+}
+
+.navbar .menu {
+  font-weight: 600;
+  margin-right: 19px;
+}
+
+.navbar .dropdown-toggle {
+  margin-right: 0;
+}
+
+.navbar .btn-sign-up {
+  width: 120px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.search .btn {
+  margin: 0 24px;
+}
+
+.search input {
+  display: none;
+  width: 0;
+}
+
+.search button {
+  margin-right: 0;
+  /* margin-left: 10px; */
+}
+
+@media (min-width: 1366px) {
+  .navbar-brand {
+    margin-right: 72px;
+  }
+
+  .navbar .menu {
+    margin-right: 56px;
+  }
+
+  .search .btn {
+    margin: 0 48px;
+  }
+}
+
+/* HERO STYLING */
+.hero-section {
   margin-top: 80px;
   margin-bottom: 205px;
 }
 
-.jumbotron .box1 {
-  background-image: url("../assets/img/spiderman.png");
+.hero-section .box1 {
+  background-image: url("../img/spiderman.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.jumbotron .box2 {
-  margin-right:24px;
-  margin-left:24px;
+.hero-section .box2 {
+  margin-right: 24px;
+  margin-left: 24px;
   margin-bottom: 72px;
-  background-image: url("../assets/img/lion-king.png");
+  background-image: url("../img/lion-king.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.jumbotron .box3 {
+.hero-section .box3 {
   margin-bottom: 144px;
-  background-image: url("../assets/img/ad225c70f9deb342f75d7fa7b019f397.png");
+  background-image: url("../img/ad225c70f9deb342f75d7fa7b019f397.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -107,7 +186,6 @@ h4 {
   position: relative;
   display: flex;
   justify-content: center;
-  border: 1px solid black;
 }
 
 .now-showing h4::after {
@@ -115,29 +193,49 @@ h4 {
   width: 100px;
   height: 3px;
   border-radius: 50px;
-  background-color: #5F2EEA;
+  background-color: #5f2eea;
   display: block;
   position: absolute;
   bottom: -16px;
   margin: 0 auto;
 }
 
-/* UPCOMING MOVIES STYLING */
-h1, h2, h3, h4 {
-  margin: 0;
+.now-showing-list {
+  margin-top: 72px;
 }
 
-/* .month-based {
-  display: flex;
-  overflow: auto;
-} */
+.now-showing-list .card-title {
+  white-space: nowrap;
+  width: 159px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.now-showing-list .card:hover .card-body {
+  display: inline-block;
+}
+
+.now-showing .card-body .btn:last-child {
+  margin-top: 8px;
+}
+
+.now-showing .card-body {
+  display: none;
+}
+
+/* UPCOMING MOVIES STYLING */
+.upcoming-movies {
+  margin-top: 208px;
+}
 
 .months-list {
   margin-top: 40px;
   margin-bottom: 56px;
 }
 
-.months-list::-webkit-scrollbar, .movies-list::-webkit-scrollbar {
+.now-showing-list::-webkit-scrollbar,
+.months-list::-webkit-scrollbar,
+.upcoming-list::-webkit-scrollbar {
   display: none;
 }
 
@@ -149,17 +247,9 @@ h1, h2, h3, h4 {
   flex: 0 0 auto;
 }
 
-.months-list .btn:active {
-  box-shadow: 0px 8px 30px rgba(95, 46, 234, 0.3);
-}
-
-.month-list .btn:focus {
-  background-color: #FFFFFF;
-}
-
-.movies-list .card {
+.now-showing-list .card,
+.upcoming-list .card {
   width: 223px;
-  height: 452px;
   padding: 32px;
   margin-right: 24px;
   border-radius: 24px;
@@ -192,7 +282,6 @@ h1, h2, h3, h4 {
 
 /* JOIN MEMBER STYLING */
 .join-a-member {
-  /* border: 1px solid black; */
   height: 372px;
   border-radius: 24px;
   margin-top: 138px;
@@ -210,16 +299,20 @@ h1, h2, h3, h4 {
   font-weight: 600;
 }
 
-.input-email, .btn-join-now {
+.input-email,
+.btn-join-now {
   height: 53px;
   border-radius: 12px;
 }
 
-.input-email, .join-a-member {
+.input-email,
+.join-a-member {
   letter-spacing: 0.75px;
 }
 
-.input-email, .join-a-member, .btn-join-now {
+.input-email,
+.join-a-member,
+.btn-join-now {
   font-size: 14px;
 }
 
@@ -232,25 +325,31 @@ h1, h2, h3, h4 {
 }
 
 .join-a-member p:first-child {
-  color: #4E4B66;
+  color: #4e4b66;
   font-size: 24px;
   font-weight: 400;
-  /* line-height: 54.72px; */
   letter-spacing: 0.25px;
   margin-bottom: 0;
 }
 
 .join-a-member p:last-child {
-  color: #6E7191;
+  color: #6e7191;
   text-align: center;
 }
 /* ==================== */
 
 /* FOOTER STYLING*/
-h5 {
+.footer h5 {
   margin-bottom: 30.54px;
   font-weight: 700;
   color: #000000;
+}
+
+.footer h5,
+.explore-link a,
+.social-usernames p,
+.copyright {
+  letter-spacing: 0.5px;
 }
 
 .sponsor-ebu {
@@ -266,27 +365,231 @@ h5 {
   height: 24.51px;
 }
 
-/* .sponsor-ebu h5, .sponsor-cine-one h5, .sponsor-hiflix h5 {
-  font-weight: 600 !important;
-} */
-
 .footer-left img {
-  margin-bottom: 29.87px;
+  width: 183px;
+  margin-bottom: 16px;
 }
 
-.footer-left p, h5 {
+.footer-left p,
+.footer h5 {
   font-size: 16px;
 }
 
 .footer-left p {
-  color: #6E7191;
+  line-height: 32px;
   letter-spacing: 0.75px;
+}
+
+.footer-left p,
+.social-usernames p {
+  color: #6e7191;
+}
+
+.explore-link a,
+.social-usernames p {
+  font-size: 14px;
 }
 
 .explore a {
   margin-bottom: 14.7px;
 }
 
-.explore a, .container p {
-  color: #4E4B66;
+.explore a,
+.container p {
+  color: #4e4b66;
+}
+
+.footer-right img {
+  margin-bottom: 24px;
+}
+
+.footer-right .social-icons {
+  margin-right: 15px;
+}
+
+.footer-right .social-icons img:last-child {
+  margin-bottom: 0;
+}
+
+.footer-right .social-usernames {
+  padding-top: 2px;
+}
+
+.footer-right .social-usernames p {
+  font-weight: 600;
+  margin-bottom: 28.5px;
+}
+
+.footer-right .social-usernames p:last-child {
+  margin-bottom: 0;
+}
+
+.copyright {
+  margin: 50px 0;
+}
+
+/* MEDIA QUERY */
+/* FOR SCREEN BELOW 576px */
+@media (max-width: 576px) {
+  .navbar,
+  .hero-section,
+  .now-showing,
+  .upcoming-movies,
+  .join-a-member,
+  .footer {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+
+  .left-section p {
+    font-size: 14px;
+  }
+
+  .left-section span {
+    font-size: 48px;
+  }
+
+  .now-showing-list .card,
+  .upcoming-list .card {
+    width: 152px;
+    padding: 16px;
+  }
+
+  .card-title {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.15px;
+  }
+
+  .card-text {
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 0.4px;
+  }
+
+  .card-body .btn {
+    width: 120px;
+    height: 25px;
+    font-size: 10px;
+    margin-top: 24px;
+  }
+
+  .join-a-member {
+    height: 401px;
+  }
+}
+
+/* FOR SCREEN BELOW 768px */
+@media (max-width: 768px) {
+  .hero-section .right-section {
+    margin-top: 64px;
+  }
+
+  .upcoming-movies .months-list {
+    margin-top: 20px;
+  }
+
+  .join-a-member .input-email,
+  .join-a-member .btn-join-now {
+    width: 100%;
+  }
+
+  .join-a-member {
+    height: 420px;
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+
+  .join-a-member form {
+    margin: 42px 0 32px 0;
+  }
+
+  .join-a-member p:first-child {
+    font-size: 14px;
+    text-align: center;
+    line-height: 34px;
+  }
+
+  .join-a-member span {
+    font-size: 32px;
+  }
+
+  .join-a-member .btn-join-now {
+    margin-top: 16px;
+    font-size: 14px;
+  }
+
+  .join-a-member .input-email {
+    font-size: 12px;
+  }
+
+  .join-a-member p:last-child {
+    font-size: 12px;
+  }
+
+  .footer .sponsor-logo-container {
+    margin-bottom: 12px;
+  }
+
+  .footer .sponsor-ebu {
+    height: 30px;
+  }
+
+  .footer .sponsor-cine-one {
+    height: 17px;
+    margin-right: 24px;
+    margin-left: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .footer .sponsor-hiflix {
+    height: 25px;
+  }
+
+  .footer-left p, .explore-link a {
+    margin-bottom: 0;
+  }
+
+  .explore-link a {
+    margin-right: 40px;
+    margin-bottom: 12px;
+  }
+}
+
+/* FOR SCREEN ABOVE 992px */
+@media (min-width: 992px) {
+  .footer-left p {
+    margin-right: 85px;
+  } 
+}
+
+/* FOR SCREEN BELOW 992px */
+@media (max-width: 992px) {
+  .footer h5 {
+    margin-bottom: 16px;
+  }
+
+  .footer-right .social-usernames p {
+    display: none;
+  }
+
+  .footer-right .social-icons {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .footer-right .social-icons img {
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
+
+  .footer-left {
+    margin-bottom: 40px;
+  }
+
+  .explore,
+  .sponsor {
+    margin-bottom: 48px;
+  }
 }
