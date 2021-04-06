@@ -86,12 +86,8 @@ footer {
 
 /* NAV STYLING*/
 .navbar {
-  /* padding-top: 0;
-  padding-bottom: 0; */
   padding: 19px 0;
-  /* height: 104px; */
   background-color: #ffffff !important;
-  /* font-family: 'Mulish', sans-serif; */
 }
 
 .navbar .navbar-container {
@@ -336,7 +332,6 @@ footer {
   color: #6e7191;
   text-align: center;
 }
-/* ==================== */
 
 /* FOOTER STYLING*/
 .footer h5 {
