@@ -42,7 +42,6 @@ form {
 
 .sign-in-form {
   padding: 83px;
-  /* padding: 0; */
 }
 
 .email,
@@ -200,6 +199,32 @@ h2 {
 /* FOR SCREEN BELOW 992px */
 @media (max-width: 992px) {
   .banner-left {
+    display: none !important;
+  }
+
+  .sign-in-form .tickitz {
+    margin-bottom: 40px;
+  }
+}
+
+/* FOR SCREEN BELOW 576px */
+@media (max-width: 576px) {
+  .sign-in-form {
+    padding: 10%;
+  }
+
+  .social-media-login .icon {
+    margin: 0;
+  }
+
+  .social-media-login span {
+    display: none;
+  }
+}
+
+/* FOR SCREEN ABOVE 992px */
+@media (min-width: 992px) {
+  .sign-in-form .tickitz {
     display: none;
   }
 }
