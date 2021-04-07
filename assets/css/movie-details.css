@@ -1,34 +1,38 @@
 /* GLOBAL STYLING */
 .btn-outline-primary {
   color: #5f2eea !important;
-  border: 1px solid #5f2eea !important;
+  border: none !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: transparent;
+  color: #4d1fcc !important;
 }
 
 .btn-primary:hover {
   background-color: #4d1fcc !important;
 }
 
-.btn-primary,
-.btn-outline-primary:hover {
+.btn-primary {
   color: #ffffff !important;
-}
-
-.btn-primary,
-.btn-outline-primary:hover {
   background-color: #5f2eea !important;
 }
 
 /* MULTIPLE ELEMENT STYLING */
+.btn-primary,
+.btn-outline-primary {
+  font-weight: 700;
+}
+
 .navbar,
 .footer {
-  margin-right: 130px;
-  margin-left: 130px;
+  background-color: #ffffff !important;
 }
 
 /* NAV STYLING*/
 .navbar {
-  padding: 19px 0;
-  background-color: #ffffff !important;
+  height: 104px;
+  padding: 0 70px;
 }
 
 .navbar .navbar-container {
@@ -44,7 +48,8 @@
   color: #414141 !important;
 }
 
-.navbar .menu, .navbar .dropdown {
+.navbar .menu,
+.navbar .dropdown {
   font-weight: 600;
 }
 
@@ -79,20 +84,178 @@
   margin-right: 0;
 }
 
+/* CONTENT STYLING */
+main {
+  padding: 0 70px;
+  margin-top: 37px;
+  font-family: "Mulish", sans-serif;
+}
 
+.movie-details .movie-poster {
+  padding: 15%;
+  border: 2px solid #dedede;
+  border-radius: 24px;
+}
 
+.movie-poster img {
+  border-radius: 16px;
+}
 
+.movie-desc-container .genre,
+.movie-desc-container .synopsis-desc {
+  color: #4e4b66;
+}
 
+.movie-desc-container,
+.showtimes-ticket-container .title-head {
+  margin-bottom: 40px;
+  letter-spacing: 0.75px;
+}
 
+.showtimes-ticket-container .pick-date-place input,
+.showtimes-ticket-container .pick-date-place button {
+  width: 284px;
+  height: 56px;
+  border: none;
+  border-radius: 16px;
+  padding: 19px 24px;
+  background: #eff0f6;
+}
 
+.showtimes-ticket-container {
+  margin-top: 150px;
+  margin-bottom: 72px;
+}
 
+.showtimes-ticket-container .pick-date-place {
+  margin-bottom: 72px;
+}
 
+.movie-desc-container h1 {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
 
+.movie-desc-container h5 {
+  font-weight: 600;
+}
 
+.movie-desc-container h6 {
+  color: #8692a6;
+}
 
+.movie-desc-container span {
+  color: #121212;
+}
 
+.movie-details .movie-desc-head {
+  margin-bottom: 5%;
+}
+
+.movie-details .separator {
+  content: "";
+  border-bottom: 1px solid #dedede;
+  margin: 3% 0;
+}
+
+.showtimes-ticket-container h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.ticket,
+.view-more a {
+  letter-spacing: 0.75px;
+}
+
+.ticket {
+  padding: 24px !important;
+  border-radius: 24px;
+  box-shadow: 0px 8px 16px rgba(186, 186, 186, 0.24);
+}
+
+.ticket .cinema-name {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.ticket .cinema-location,
+.ticket .hour-group {
+  font-size: 12px;
+  color: #6e7191;
+}
+
+.ticket .cinema-logo-container {
+  padding: 0 5% 0 2%;
+}
+
+.ticket .cinema-logo-container img {
+  width: 100%;
+}
+
+.ticket .cinema-info-group {
+  padding-left: 5%;
+}
+
+.ticket .cinema-location {
+  font-weight: 300;
+}
+
+.ticket .separator {
+  border: 0.5px solid #dedede;
+  margin: 2% 0;
+}
+
+.ticket .hour-group {
+  font-weight: 600;
+}
+
+.ticket .hour-group span:nth-child(4n) {
+  text-align: end;
+}
+
+.ticket .hour-group span:nth-child(4n + 2) {
+  text-align: center;
+}
+
+.ticket .hour-group span:nth-child(4n + 3) {
+  text-align: center;
+}
+
+.ticket .price-group {
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+.ticket .price-group p {
+  color: #6b6b6b;
+}
+
+.ticket .price-group .price {
+  font-weight: 600;
+}
+
+.btn-action button {
+  width: 134px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.view-more {
+  margin-top: 48px;
+}
+
+.view-more a {
+  color: #5f2eea;
+  font-size: 16px;
+  font-weight: 600;
+}
 
 /* FOOTER STYLING*/
+.footer {
+  padding: 96px 130px 48px;
+}
+
 .footer h5 {
   margin-bottom: 30.54px;
   font-weight: 700;
@@ -179,7 +342,7 @@
 }
 
 .copyright {
-  margin: 50px 0;
+  margin: 50px 0 0;
 }
 
 /* MEDIA QUERY */
@@ -187,13 +350,48 @@
 @media (max-width: 576px) {
   .navbar,
   .footer {
-    margin-right: 10%;
-    margin-left: 10%;
+    padding-right: 5% !important;
+    padding-left: 5% !important;
   }
 }
 
 /* FOR SCREEN BELOW 768px */
 @media (max-width: 768px) {
+  .movie-desc-container h1 {
+    font-size: 20px;
+  }
+
+  .movie-poster {
+    margin-bottom: 32px;
+  }
+
+  .showtimes-ticket-container h3 {
+    font-size: 18px;
+  }
+
+  .showtimes-ticket-container .pick-date-place input[type="date"] {
+    margin-bottom: 12px;
+  }
+
+  .ticket .cinema-logo-container {
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 12px;
+  }
+
+  .ticket .cinema-logo-container img {
+    width: 60%;
+  }
+
+  .ticket h3 {
+    display: none;
+  }
+
+  .ticket .cinema-info-group {
+    justify-content: center;
+    padding: 0;
+  }
+
   .footer .sponsor-logo-container {
     margin-bottom: 12px;
   }
@@ -227,6 +425,11 @@
 
 /* FOR SCREEN BELOW 992px */
 @media (max-width: 992px) {
+  .footer {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+  }
+
   .footer h5 {
     margin-bottom: 16px;
   }
@@ -255,7 +458,21 @@
   }
 }
 
-/* FOR SCREEN ABOVE 992px */
+/* FOR SCREEN ABOVE 768px */
+@media (min-width: 768px) {
+  .movie-desc-container {
+    padding-left: 5%;
+  }
+
+  .movie-desc-container h1 {
+    font-size: 32px;
+  }
+
+  .showtimes-ticket-container .pick-date-place div:first-child {
+    margin-right: 24px;
+  }
+}
+
 @media (min-width: 992px) {
   .footer-left p {
     margin-right: 85px;
@@ -275,8 +492,4 @@
   .navbar .search .btn {
     margin: 0 48px;
   }
-}
-
-.movie-poster {
-  padding: 47.65px;
 }
