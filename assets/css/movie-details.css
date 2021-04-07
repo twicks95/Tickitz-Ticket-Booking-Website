@@ -235,7 +235,7 @@ main {
   font-weight: 600;
 }
 
-.btn-action button {
+.btn-action a {
   width: 134px;
   height: 40px;
   border-radius: 8px;
