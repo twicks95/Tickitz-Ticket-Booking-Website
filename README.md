@@ -7,7 +7,7 @@
     <a href="https://github.com/twicks95/tickitz-web-responsive/pulls">Request Feature</a>
   </p>
 
-![Image Banner](README/home.jpg)
+![Image Banner](README/image/home.jpg)
 
 ## About The Project
 
