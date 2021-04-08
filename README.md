@@ -1,4 +1,4 @@
-<h1 align='center'>Uvies - Movie Ticket Booking Online</h1>
+<h1 align='center'>Uvies - Online Movie Ticket Booking</h1>
   <p align="center">
     <a href="https://tickitz-ticket.netlify.app/">View Demo</a>
     ·
