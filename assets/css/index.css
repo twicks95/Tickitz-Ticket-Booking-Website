@@ -103,7 +103,8 @@ footer {
   color: #414141 !important;
 }
 
-.navbar .menu, .navbar .dropdown {
+.navbar .menu,
+.navbar .dropdown {
   font-weight: 600;
 }
 
@@ -151,6 +152,7 @@ footer {
 
 /* HERO STYLING */
 .hero-section {
+  display: flex;
   margin-top: 80px;
   margin-bottom: 205px;
 }
@@ -549,7 +551,8 @@ footer {
     height: 25px;
   }
 
-  .footer-left p, .explore-link a {
+  .footer-left p,
+  .explore-link a {
     margin-bottom: 0;
   }
 
@@ -563,11 +566,15 @@ footer {
 @media (min-width: 992px) {
   .footer-left p {
     margin-right: 85px;
-  } 
+  }
 }
 
 /* FOR SCREEN BELOW 992px */
 @media (max-width: 992px) {
+  .hero-section {
+    flex-direction: column;
+  }
+
   .footer h5 {
     margin-bottom: 16px;
   }
