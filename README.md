@@ -8,6 +8,7 @@
   </p>
 
 ![Image Banner](README/image/home.jpg)
+![Image Banner](README/image/now-showing.jpg)
 
 ## About The Project
 
